@@ -18,14 +18,14 @@
 
 class CValidationState;
 
-#define START_MASTERNODE_PAYMENTS_TESTNET 1516694400  //Tuesday, January 23, 2018 4:00:00 AM
-#define START_MASTERNODE_PAYMENTS 1516694400  //Tuesday, January 23, 2018 4:00:00 AM
+#define START_MASTERNODE_PAYMENTS_TESTNET 1522857570   
+#define START_MASTERNODE_PAYMENTS 1522857570
 
 static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
-static const int64_t DARKSEND_POOL_MAX = (9999.99*COIN);
+static const int64_t DARKSEND_POOL_MAX = (879999.99*COIN);
 
 static const int64_t STATIC_REWARD = 24 * COIN;
-static const int64_t TARGET_SPACING = 80; //60 sec
+static const int64_t TARGET_SPACING = 88; //88 sec
 
 #define INSTANTX_SIGNATURES_REQUIRED           10
 #define INSTANTX_SIGNATURES_TOTAL              15
