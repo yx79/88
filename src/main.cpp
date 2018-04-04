@@ -48,10 +48,10 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 
 unsigned int nStakeMinAge = 24 * 60 * 60; // 24 hours
-unsigned int nStakeMaxAge = 48 * 24 * 60 * 60; // 48 Days.
-unsigned int nModifierInterval = 2 * 60; // time to elapse before new modifier is computed
+unsigned int nStakeMaxAge = 88 * 24 * 60 * 60; // 48 Days.
+unsigned int nModifierInterval = 8 * 60; // time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 50;
+int nCoinbaseMaturity = 88;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -83,7 +83,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Deviant Signed Message:\n";
+const string strMessageMagic = "EighthCoin Signed Message:\n";
 
 std::set<uint256> setValidatedTx;
 
@@ -1397,12 +1397,9 @@ int64_t GetRewardByHeight(int nHeight)
 int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
 	// Base reward.
-	int64_t nSubsidy;
-	if (nHeight < 51)
-		nSubsidy = 82720 * COIN;
-	else
-		nSubsidy = 0 * COIN;
-
+	int64_t nSubsidy = 0 * COIN;
+	if (nHeight == 1)
+		nSubsidy = 88888888 * COIN;
 	// add fees.
 	return nSubsidy + nFees;
 }
@@ -1416,7 +1413,7 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
 	return nSubsidy + nFees;
 }
 
-static int64_t nTargetTimespan = 10 * 60;  // 10 mins
+static int64_t nTargetTimespan = 8 * 60;  // 8 mins
 
 // ppcoin: find last block index up to pindex
 const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake)
@@ -4573,16 +4570,15 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
 	int64_t ret;
-	if (nHeight < 100001)
-		ret = blockValue * 1 / 2;  //50%
-	else if (nHeight < 200001)
-		ret = blockValue * 3 / 5;  //60%
-	else if (nHeight < 300001)
-		ret = blockValue * 7 / 10; //70%
-	else if (nHeight < 400001)
-		ret = blockValue * 4 / 5;  //80%
+	if (nHeight < 88888)
+		ret = blockValue * 0.48;  //48%
+	else if (nHeight < 188888)
+		ret = blockValue * 0.56;  //56%
+	else if (nHeight < 288888)
+		ret = blockValue * 0.64; //64%
+	else if (nHeight < 488888)
+		ret = blockValue * 0.72;  //72%
 	else
-		ret = blockValue * 9 / 10;  //90%
-
+		ret = blockValue * 0.88;  //88%
 	return ret;
 }
