@@ -32,7 +32,7 @@ static void convertSeeds(std::vector<CAddress> &vSeedsOut, const unsigned int *d
      // it'll get a pile of addresses with newer timestamps.
      // Seed nodes are given a random 'last seen time' of between one and two
      // weeks ago.
-     const int64_t nOneWeek = 7*24*60*60;
+     const int64_t nOneWeek = 7 * 24 * 60 * 60;
     for (unsigned int k = 0; k < count; ++k)
     {
         struct in_addr ip;
@@ -86,7 +86,7 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime    = 1519160256;
-		genesis.nBits = bnProofOfWorkLimit.GetCompact();
+	genesis.nBits = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce   = 1745515;
 		
         hashGenesisBlock = genesis.GetHash();
@@ -96,8 +96,8 @@ public:
 
         // EDITING: Address Prefixes
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,18); // 8
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,85);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,83);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,65);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,100);
         base58Prefixes[STEALTH_ADDRESS] = std::vector<unsigned char>(1,43);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
@@ -143,10 +143,10 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 21;
-        pchMessageStart[1] = 66;
-        pchMessageStart[2] = 88;
-        pchMessageStart[3] = 388;
+        pchMessageStart[0] = 0x21;
+        pchMessageStart[1] = 0xa6;
+        pchMessageStart[2] = 0xd8;
+        pchMessageStart[3] = 0xe8;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
         vAlertPubKey = ParseHex("04fca3a230591895a2a274a733989e10bd15f9cf7bfc26fcfc2d72d584378bd208c59f7809220154bd808b53ccbd422e864f359105f277a30026752fd404a0fc76");
         nDefaultPort = 18888;
