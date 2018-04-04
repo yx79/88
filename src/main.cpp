@@ -48,7 +48,7 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 
 unsigned int nStakeMinAge = 24 * 60 * 60; // 24 hours
-unsigned int nStakeMaxAge = 88 * 24 * 60 * 60; // 48 Days.
+unsigned int nStakeMaxAge = 88 * 24 * 60 * 60; // 88 Days.
 unsigned int nModifierInterval = 8 * 60; // time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 88;
@@ -1357,43 +1357,6 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 	return bnProofOfStakeLimit;
 }
 
-// miner's coin base reward
-int64_t GetRewardByHeight(int nHeight)
-{
-	const int YEARLY_BLOCKCOUNT = 525650;
-	int64_t nReward;
-	if (nHeight < YEARLY_BLOCKCOUNT)
-		nReward = STATIC_REWARD;
-	else if (nHeight < (2 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.82;
-	else if (nHeight < (3 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.6724;
-	else if (nHeight < (4 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.5514;
-	else if (nHeight < (5 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.4522;
-	else if (nHeight < (6 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.3708;
-	else if (nHeight < (7 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.3040;
-	else if (nHeight < (8 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.2493;
-	else if (nHeight < (9 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.2045;
-	else if (nHeight < (10 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.1677;
-	else if (nHeight < (11 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.1375;
-	else if (nHeight < (12 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.1127;
-	else if (nHeight < (13 * YEARLY_BLOCKCOUNT))
-		nReward = STATIC_REWARD * 0.0924;
-	else
-		nReward = 1 * COIN;
-
-	return nReward;
-}
-
 int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
 	// Base reward.
@@ -1409,7 +1372,7 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
 {
 	// Accounting for leap years.
 	int nHeight = pindexPrev->nHeight + 1;
-	int64_t nSubsidy = GetRewardByHeight(nHeight);
+	int64_t nSubsidy = 88 * COIN;
 	return nSubsidy + nFees;
 }
 
