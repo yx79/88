@@ -25,7 +25,7 @@ static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
 static const int64_t DARKSEND_POOL_MAX = (879999.99*COIN);
 
 static const int64_t STATIC_REWARD = 24 * COIN;
-static const int64_t TARGET_SPACING = 88; //88 sec
+static const int64_t TARGET_SPACING = 60; //1 min
 
 #define INSTANTX_SIGNATURES_REQUIRED           10
 #define INSTANTX_SIGNATURES_TOTAL              15
