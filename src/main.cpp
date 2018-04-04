@@ -1370,9 +1370,24 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 // miner's coin stake reward
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees)
 {
-	// Accounting for leap years.
-	int nHeight = pindexPrev->nHeight + 1;
+	int nBestHeight = pindexPrev->nHeight + 1;
+	
 	int64_t nSubsidy = 88 * COIN;
+	
+	if (nBestHeight % 8888888 == 0) {
+        	nSubsidy = nSubsidy / 11 * 1111111; //     8888888
+    	} else if (nBestHeight % 888888 == 0) {
+        	nSubsidy = nSubsidy / 11 * 111111; //      888888
+    	} else if (nBestHeight % 88888 == 0) {
+        	nSubsidy = nSubsidy / 11 * 11111; //       88888
+    	} else if (nBestHeight % 8888 == 0) {
+        	nSubsidy = nSubsidy / 11 * 1111; //        8888
+    	} else if (nBestHeight % 888 == 0) {
+        	nSubsidy = nSubsidy / 11 * 111; //         888
+    	} else {
+        	// default nSubsidy is 88
+    	}
+	
 	return nSubsidy + nFees;
 }
 
