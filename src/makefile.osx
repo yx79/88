@@ -140,11 +140,7 @@ ifndef USE_UPNP
 endif
 ifneq (${USE_UPNP}, -)
 	DEFS += -DUSE_UPNP=$(USE_UPNP)
-ifdef STATIC
-	LIBS += $(DEPSDIR)/lib/libminiupnpc.a
-else
-	LIBS += -lminiupnpc
-endif
+LIBS += $(DEPSDIR)/lib/libminiupnpc.a
 endif
 
 ifneq (${USE_IPV6}, -)
