@@ -114,7 +114,7 @@ public:
             obj.push_back(Pair("hex", HexStr(subscript.begin(), subscript.end())));
             Array a;
             BOOST_FOREACH(const CTxDestination& addr, addresses)
-                a.push_back(CDeviantcoinAddress(addr).ToString());
+                a.push_back(CEighthCoincoinAddress(addr).ToString());
             obj.push_back(Pair("addresses", a));
             if (whichType == TX_MULTISIG)
                 obj.push_back(Pair("sigsrequired", nRequired));
@@ -134,10 +134,10 @@ Value validateaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress <Deviantaddress>\n"
-            "Return information about <Deviantaddress>.");
+            "validateaddress <EighthCoinaddress>\n"
+            "Return information about <EighthCoinaddress>.");
 
-    CDeviantcoinAddress address(params[0].get_str());
+    CEighthCoincoinAddress address(params[0].get_str());
     bool isValid = address.IsValid();
 
     Object ret;
@@ -166,8 +166,8 @@ Value validatepubkey(const Array& params, bool fHelp)
 {
     if (fHelp || !params.size() || params.size() > 2)
         throw runtime_error(
-            "validatepubkey <Deviantpubkey>\n"
-            "Return information about <Deviantpubkey>.");
+            "validatepubkey <EighthCoinpubkey>\n"
+            "Return information about <EighthCoinpubkey>.");
 
     std::vector<unsigned char> vchPubKey = ParseHex(params[0].get_str());
     CPubKey pubKey(vchPubKey);
@@ -176,7 +176,7 @@ Value validatepubkey(const Array& params, bool fHelp)
     bool isCompressed = pubKey.IsCompressed();
     CKeyID keyID = pubKey.GetID();
 
-    CDeviantcoinAddress address;
+    CEighthCoincoinAddress address;
     address.Set(keyID);
 
     Object ret;
@@ -206,14 +206,14 @@ Value verifymessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage <Deviantaddress> <signature> <message>\n"
+            "verifymessage <EighthCoinaddress> <signature> <message>\n"
             "Verify a signed message");
 
     string strAddress  = params[0].get_str();
     string strSign     = params[1].get_str();
     string strMessage  = params[2].get_str();
 
-    CDeviantcoinAddress addr(strAddress);
+    CEighthCoincoinAddress addr(strAddress);
     if (!addr.IsValid())
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid address");
 

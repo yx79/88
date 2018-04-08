@@ -7,23 +7,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Deviant-Qt</string>
+	<string>EighthCoin-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Deviant-Qt</string>
+	<string>EighthCoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.Deviant.Deviant-Qt</string>
+	<string>co.EighthCoin.EighthCoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.Deviant.DeviantPayment</string>
+            <string>co.EighthCoin.EighthCoinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>Deviant</string>
+              <string>EighthCoin</string>
             </array>
           </dict>
         </array>

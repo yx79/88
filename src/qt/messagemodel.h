@@ -67,7 +67,7 @@ struct MessageTableEntry
     }
 };
 
-/** Interface to Deviant Secure Messaging from Qt view code. */
+/** Interface to EighthCoin Secure Messaging from Qt view code. */
 class MessageModel : public QAbstractTableModel
 {
     Q_OBJECT

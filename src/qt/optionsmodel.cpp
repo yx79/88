@@ -66,13 +66,13 @@ void OptionsModel::Init()
     if (!settings.contains("nDarksendRounds"))
         settings.setValue("nDarksendRounds", 2);
     nDarksendRounds = settings.value("nDarksendRounds").toLongLong();
-    if (!settings.contains("nAnonymizeDeviantAmount"))
-        settings.setValue("nAnonymizeDeviantAmount", 1000);
-    nAnonymizeDeviantAmount = settings.value("nAnonymizeDeviantAmount").toLongLong();
+    if (!settings.contains("nAnonymizeEighthCoinAmount"))
+        settings.setValue("nAnonymizeEighthCoinAmount", 1000);
+    nAnonymizeEighthCoinAmount = settings.value("nAnonymizeEighthCoinAmount").toLongLong();
     if (settings.contains("nDarksendRounds"))
         SoftSetArg("-darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeDeviantAmount"))
-        SoftSetArg("-anonymizeDeviantamount", settings.value("nAnonymizeDeviantAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeEighthCoinAmount"))
+        SoftSetArg("-anonymizeEighthCoinamount", settings.value("nAnonymizeEighthCoinAmount").toString().toStdString());
 
 
 
@@ -206,8 +206,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return fCoinControlFeatures;
         case DarksendRounds:
             return QVariant(nDarksendRounds);
-        case AnonymizeDeviantAmount:
-            return QVariant(nAnonymizeDeviantAmount);
+        case AnonymizeEighthCoinAmount:
+            return QVariant(nAnonymizeEighthCoinAmount);
         case UseBlackTheme:
             return QVariant(fUseBlackTheme);
         default:
@@ -318,10 +318,10 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             settings.setValue("nDarksendRounds", nDarksendRounds);
             emit darksendRoundsChanged(nDarksendRounds);
             break;
-        case AnonymizeDeviantAmount:
-            nAnonymizeDeviantAmount = value.toInt();
-            settings.setValue("nAnonymizeDeviantAmount", nAnonymizeDeviantAmount);
-            emit AnonymizeDeviantAmountChanged(nAnonymizeDeviantAmount);
+        case AnonymizeEighthCoinAmount:
+            nAnonymizeEighthCoinAmount = value.toInt();
+            settings.setValue("nAnonymizeEighthCoinAmount", nAnonymizeEighthCoinAmount);
+            emit AnonymizeEighthCoinAmountChanged(nAnonymizeEighthCoinAmount);
             break;
         default:
             break;

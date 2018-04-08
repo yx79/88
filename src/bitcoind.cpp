@@ -52,12 +52,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("Deviant version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("EighthCoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  Deviantd [options]                     " + "\n" +
-                  "  Deviantd [options] <command> [params]  " + _("Send command to -server or Deviantd") + "\n" +
-                  "  Deviantd [options] help                " + _("List commands") + "\n" +
-                  "  Deviantd [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  EighthCoind [options]                     " + "\n" +
+                  "  EighthCoind [options] <command> [params]  " + _("Send command to -server or EighthCoind") + "\n" +
+                  "  EighthCoind [options] help                " + _("List commands") + "\n" +
+                  "  EighthCoind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -67,7 +67,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Deviant:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "EighthCoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)

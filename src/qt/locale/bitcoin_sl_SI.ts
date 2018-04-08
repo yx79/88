@@ -3,19 +3,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Deviant</source>
-        <translation>O Deviant</translation>
+        <source>About EighthCoin</source>
+        <translation>O EighthCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Deviant&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Deviant&lt;/b&gt; verzija</translation>
+        <source>&lt;b&gt;EighthCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;EighthCoin&lt;/b&gt; verzija</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Deviant developers</source>
+Copyright © 2014 The EighthCoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -58,8 +58,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Deviant addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>To so vaši Deviant naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
+        <source>These are your EighthCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>To so vaši EighthCoin naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -73,8 +73,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Deviant address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva Deviant naslova</translation>
+        <source>Sign a message to prove you own a EighthCoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva EighthCoin naslova</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -88,8 +88,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Deviant address</source>
-        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim Deviant naslovom</translation>
+        <source>Verify a message to ensure it was signed with a specified EighthCoin address</source>
+        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim EighthCoin naslovom</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -256,8 +256,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>Deviant will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Deviant se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
+        <source>EighthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>EighthCoin se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -350,8 +350,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Deviant</source>
-        <translation>Pokaži informacije o Deviant</translation>
+        <source>Show information about EighthCoin</source>
+        <translation>Pokaži informacije o EighthCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -390,13 +390,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Deviant address</source>
-        <translation>Pošlji kovance na Deviant naslov</translation>
+        <source>Send coins to a EighthCoin address</source>
+        <translation>Pošlji kovance na EighthCoin naslov</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Deviant</source>
-        <translation>Spremeni nastavitve za Deviant</translation>
+        <source>Modify configuration options for EighthCoin</source>
+        <translation>Spremeni nastavitve za EighthCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -436,8 +436,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>Deviant</source>
-        <translation>Deviant</translation>
+        <source>EighthCoin</source>
+        <translation>EighthCoin</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -446,8 +446,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Deviant</source>
-        <translation>&amp;O Deviant</translation>
+        <source>&amp;About EighthCoin</source>
+        <translation>&amp;O EighthCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -498,13 +498,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Deviant client</source>
-        <translation>Deviant program</translation>
+        <source>EighthCoin client</source>
+        <translation>EighthCoin program</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Deviant network</source>
-        <translation><numerusform>%n aktivne povezave na Deviant omrežje</numerusform><numerusform>%n aktivnih povezav na Deviant omrežje</numerusform><numerusform>%n aktivnih povezav na Deviant omrežje</numerusform><numerusform>%n aktivnih povezav na Deviant omrežje</numerusform></translation>
+        <source>%n active connection(s) to EighthCoin network</source>
+        <translation><numerusform>%n aktivne povezave na EighthCoin omrežje</numerusform><numerusform>%n aktivnih povezav na EighthCoin omrežje</numerusform><numerusform>%n aktivnih povezav na EighthCoin omrežje</numerusform><numerusform>%n aktivnih povezav na EighthCoin omrežje</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -598,8 +598,8 @@ Naslov: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Deviant address or malformed URI parameters.</source>
-        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega Deviant naslova ali slabih parametrov URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid EighthCoin address or malformed URI parameters.</source>
+        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega EighthCoin naslova ali slabih parametrov URI.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -721,8 +721,8 @@ Naslov: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Deviant can no longer continue safely and will quit.</source>
-        <translation>Prišlo je do usodne napake. Program Deviant se ne more več varno nadaljevati in se bo zato zaprl. </translation>
+        <source>A fatal error occurred. EighthCoin can no longer continue safely and will quit.</source>
+        <translation>Prišlo je do usodne napake. Program EighthCoin se ne more več varno nadaljevati in se bo zato zaprl. </translation>
     </message>
 </context>
 <context>
@@ -1055,8 +1055,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Deviant address.</source>
-        <translation>Vneseni naslov &quot;%1&quot; ni veljaven Deviant naslov.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid EighthCoin address.</source>
+        <translation>Vneseni naslov &quot;%1&quot; ni veljaven EighthCoin naslov.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1074,8 +1074,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Deviant-Qt</source>
-        <translation>Deviant-Qt</translation>
+        <source>EighthCoin-Qt</source>
+        <translation>EighthCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1147,13 +1147,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Deviant after logging in to the system.</source>
-        <translation>Avtomatično zaženi Deviant ob zagonu sistema.</translation>
+        <source>Automatically start EighthCoin after logging in to the system.</source>
+        <translation>Avtomatično zaženi EighthCoin ob zagonu sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Deviant on system login</source>
-        <translation>&amp;Zaženi Deviant ob prijavi v sistem</translation>
+        <source>&amp;Start EighthCoin on system login</source>
+        <translation>&amp;Zaženi EighthCoin ob prijavi v sistem</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1162,8 +1162,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Deviant client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avtomatično odpri vrata na routerju za Deviant program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
+        <source>Automatically open the EighthCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avtomatično odpri vrata na routerju za EighthCoin program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1172,8 +1172,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Deviant network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Poveži se na Deviant omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
+        <source>Connect to the EighthCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Poveži se na EighthCoin omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1247,8 +1247,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Deviant.</source>
-        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu Deviant aplikacije. </translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting EighthCoin.</source>
+        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu EighthCoin aplikacije. </translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1314,8 +1314,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Deviant.</source>
-        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu Deviant aplikacije</translation>
+        <source>This setting will take effect after restarting EighthCoin.</source>
+        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu EighthCoin aplikacije</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1333,8 +1333,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Deviant network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z Deviant omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EighthCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z EighthCoin omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1575,8 +1575,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Deviant-Qt help message to get a list with possible Deviant command-line options.</source>
-        <translation>Prikaži Deviant-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice Deviant aplikacije</translation>
+        <source>Show the EighthCoin-Qt help message to get a list with possible EighthCoin command-line options.</source>
+        <translation>Prikaži EighthCoin-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice EighthCoin aplikacije</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1595,13 +1595,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>Deviant - Debug window</source>
-        <translation>Deviant - okno za odpravljanje napak</translation>
+        <source>EighthCoin - Debug window</source>
+        <translation>EighthCoin - okno za odpravljanje napak</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Deviant Core</source>
-        <translation>Deviant jedro</translation>
+        <source>EighthCoin Core</source>
+        <translation>EighthCoin jedro</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1610,8 +1610,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Deviant debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Odpri Deviant datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
+        <source>Open the EighthCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Odpri EighthCoin datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1620,8 +1620,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the Deviant RPC console.</source>
-        <translation>Dobrodošli v Deviant RPC konzoli.</translation>
+        <source>Welcome to the EighthCoin RPC console.</source>
+        <translation>Dobrodošli v EighthCoin RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1729,8 +1729,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 DEV</source>
-        <translation>123.456 DEV {0.00 ?}</translation>
+        <source>0.00 8TH</source>
+        <translation>123.456 8TH {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1799,8 +1799,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 DEV</source>
-        <translation>123.456 DEV</translation>
+        <source>123.456 8TH</source>
+        <translation>123.456 8TH</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1814,8 +1814,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a Deviant address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite Deviant naslov (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EighthCoin address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite EighthCoin naslov (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1914,8 +1914,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid Deviant address</source>
-        <translation>OPOZORILO: Neveljaven Deviant naslov</translation>
+        <source>WARNING: Invalid EighthCoin address</source>
+        <translation>OPOZORILO: Neveljaven EighthCoin naslov</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1988,8 +1988,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Deviant address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite Deviant naslov (npr. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EighthCoin address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite EighthCoin naslov (npr. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2049,8 +2049,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Deviant address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva Deviant naslova</translation>
+        <source>Sign the message to prove you own this EighthCoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva EighthCoin naslova</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2081,8 +2081,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Deviant address</source>
-        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim Deviant naslovom</translation>
+        <source>Verify the message to ensure it was signed with the specified EighthCoin address</source>
+        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim EighthCoin naslovom</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2092,8 +2092,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Deviant address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite Deviant naslov (npr. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EighthCoin address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite EighthCoin naslov (npr. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2102,8 +2102,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Deviant signature</source>
-        <translation>Vnesite Deviant podpis</translation>
+        <source>Enter EighthCoin signature</source>
+        <translation>Vnesite EighthCoin podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2681,8 +2681,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>Deviant version</source>
-        <translation>Deviant različica</translation>
+        <source>EighthCoin version</source>
+        <translation>EighthCoin različica</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2691,7 +2691,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Deviantd</source>
+        <source>Send command to -server or EighthCoind</source>
         <translation>Pošlji ukaz na -server ali blackoind</translation>
     </message>
     <message>
@@ -2711,13 +2711,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: Deviant.conf)</source>
-        <translation>Določi konfiguracijsko datoteko (privzeto: Deviant.conf)</translation>
+        <source>Specify configuration file (default: EighthCoin.conf)</source>
+        <translation>Določi konfiguracijsko datoteko (privzeto: EighthCoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Deviantd.pid)</source>
-        <translation>Določi pid datoteko (privzeto: Deviant.pid)</translation>
+        <source>Specify pid file (default: EighthCoind.pid)</source>
+        <translation>Določi pid datoteko (privzeto: EighthCoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2734,13 +2734,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Deviantrpc
+rpcuser=EighthCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EighthCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2846,8 +2846,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Deviant will not work properly.</source>
-        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno Deviant ne bo deloval.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EighthCoin will not work properly.</source>
+        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno EighthCoin ne bo deloval.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3153,7 +3153,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. Deviant is shutting down.</source>
+        <source>Initialization sanity check failed. EighthCoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3218,13 +3218,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Deviant</source>
-        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo Deviant</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of EighthCoin</source>
+        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo EighthCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Deviant to complete</source>
-        <translation>Denarnica mora biti prepisana: ponovno odprite Deviant za dokončanje</translation>
+        <source>Wallet needed to be rewritten: restart EighthCoin to complete</source>
+        <translation>Denarnica mora biti prepisana: ponovno odprite EighthCoin za dokončanje</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3288,8 +3288,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. Deviant is probably already running.</source>
-        <translation>Navezava v %s  na tem računalniku ni mogoča Deviant aplikacija je verjetno že zagnana.</translation>
+        <source>Unable to bind to %s on this computer. EighthCoin is probably already running.</source>
+        <translation>Navezava v %s  na tem računalniku ni mogoča EighthCoin aplikacija je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3328,7 +3328,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Deviant is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. EighthCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

@@ -630,7 +630,7 @@ void CNode::copyStats(CNodeStats &stats)
     stats.fSyncNode = (this == pnodeSync);
 
     // It is common for nodes with good ping times to suddenly become lagged,
-    // due to a new block arriving or other large Deviant.
+    // due to a new block arriving or other large EighthCoin.
     // Merely reporting pingtime might fool the caller into thinking the node was still responsive,
     // since pingtime does not update until the ping is complete, which might take a while.
     // So, if a ping is taking an unusually long time in flight,
@@ -1150,7 +1150,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "Deviant " + FormatFullVersion();
+        string strDesc = "EighthCoin " + FormatFullVersion();
 
         try {
             while (!ShutdownRequested()) {
@@ -1720,7 +1720,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Deviant is probably already running."), addrBind.ToString());
+            strError = strprintf(_("Unable to bind to %s on this computer. EighthCoin is probably already running."), addrBind.ToString());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString(), nErr, strerror(nErr));
         LogPrintf("%s\n", strError);

@@ -7,12 +7,12 @@ software written by Eric Young (eay@cryptsoft.com) and UPnP software written by
 Thomas Bernard.
 
 
-Mac OS X Deviantd build instructions
+Mac OS X EighthCoind build instructions
 Laszlo Hanyecz <solar@heliacal.net>
 Douglas Huff <dhuff@jrbobdobbs.org>
 
 
-See readme-qt.rst for instructions on building Deviant QT, the
+See readme-qt.rst for instructions on building EighthCoin QT, the
 graphical user interface.
 
 Tested on 10.5 and 10.6 intel.  PPC is not supported because it's big-endian.
@@ -27,7 +27,7 @@ but you can get the current version from http://developer.apple.com
 
 1.  Clone the github tree to get the source code:
 
-git clone https://github.com/Deviantwork/Deviant Deviant
+git clone https://github.com/EighthCoinwork/EighthCoin EighthCoin
 
 2.  Download and install MacPorts from http://www.macports.org/
 
@@ -41,14 +41,14 @@ sudo port install boost db48 openssl miniupnpc
 Optionally install qrencode (and set USE_QRCODE=1):
 sudo port install qrencode
 
-4.  Now you should be able to build Deviantd:
+4.  Now you should be able to build EighthCoind:
 
-cd Deviant/src
+cd EighthCoin/src
 make -f makefile.osx
 
 Run:
-  ./Deviantd --help  # for a list of command-line options.
+  ./EighthCoind --help  # for a list of command-line options.
 Run
-  ./Deviantd -daemon # to start the Deviant daemon.
+  ./EighthCoind -daemon # to start the EighthCoin daemon.
 Run
-  ./Deviantd help # When the daemon is running, to get a list of RPC commands
+  ./EighthCoind help # When the daemon is running, to get a list of RPC commands

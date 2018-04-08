@@ -106,8 +106,8 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
 {
     Array tests = read_json("base58_keys_valid.json");
     std::vector<unsigned char> result;
-    CDeviantcoinSecret secret;
-    CDeviantcoinAddress addr;
+    CEighthCoincoinSecret secret;
+    CEighthCoincoinAddress addr;
 
     BOOST_FOREACH(Value& tv, tests)
     {
@@ -131,7 +131,7 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
         {
             bool isCompressed = find_value(metadata, "isCompressed").get_bool();
             // Must be valid private key
-            // Note: CDeviantcoinSecret::SetString tests isValid, whereas CDeviantcoinAddress does not!
+            // Note: CEighthCoincoinSecret::SetString tests isValid, whereas CEighthCoincoinAddress does not!
             BOOST_CHECK_MESSAGE(secret.SetString(exp_base58string), "!SetString:"+ strTest);
             BOOST_CHECK_MESSAGE(secret.IsValid(), "!IsValid:" + strTest);
             CKey privkey = secret.GetKey();
@@ -189,7 +189,7 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
             CKey key;
             key.Set(exp_payload.begin(), exp_payload.end(), isCompressed);
             assert(key.IsValid());
-            CDeviantcoinSecret secret;
+            CEighthCoincoinSecret secret;
             secret.SetKey(key);
             BOOST_CHECK_MESSAGE(secret.ToString() == exp_base58string, "result mismatch: " + strTest);
         }
@@ -214,16 +214,16 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
                 BOOST_ERROR("Bad addrtype: " << strTest);
                 continue;
             }
-            CDeviantcoinAddress addrOut;
-            BOOST_CHECK_MESSAGE(boost::apply_visitor(CDeviantcoinAddressVisitor(&addrOut), dest), "encode dest: " + strTest);
+            CEighthCoincoinAddress addrOut;
+            BOOST_CHECK_MESSAGE(boost::apply_visitor(CEighthCoincoinAddressVisitor(&addrOut), dest), "encode dest: " + strTest);
             BOOST_CHECK_MESSAGE(addrOut.ToString() == exp_base58string, "mismatch: " + strTest);
         }
     }
 
     // Visiting a CNoDestination must fail
-    CDeviantcoinAddress dummyAddr;
+    CEighthCoincoinAddress dummyAddr;
     CTxDestination nodest = CNoDestination();
-    BOOST_CHECK(!boost::apply_visitor(CDeviantcoinAddressVisitor(&dummyAddr), nodest));
+    BOOST_CHECK(!boost::apply_visitor(CEighthCoincoinAddressVisitor(&dummyAddr), nodest));
 
     SelectParams(CChainParams::MAIN);
 }
@@ -233,8 +233,8 @@ BOOST_AUTO_TEST_CASE(base58_keys_invalid)
 {
     Array tests = read_json("base58_keys_invalid.json"); // Negative testcases
     std::vector<unsigned char> result;
-    CDeviantcoinSecret secret;
-    CDeviantcoinAddress addr;
+    CEighthCoincoinSecret secret;
+    CEighthCoincoinAddress addr;
 
     BOOST_FOREACH(Value& tv, tests)
     {

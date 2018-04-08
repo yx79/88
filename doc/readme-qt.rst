@@ -1,14 +1,14 @@
-Deviant-qt: Qt5 GUI for Deviant
+EighthCoin-qt: Qt5 GUI for EighthCoin
 ===============================
 
 Linux
 -------
-https://github.com/Deviantcoin/Source/blob/master/doc/build-unix.md 
+https://github.com/EighthCoincoin/Source/blob/master/doc/build-unix.md 
 
 Windows
 --------
-https://github.com/Deviantcoin/Source/blob/master/doc/build-msw.md
+https://github.com/EighthCoincoin/Source/blob/master/doc/build-msw.md
 
 Mac OS X
 --------
-https://github.com/Deviantcoin/Source/blob/master/doc/build-osx.md
+https://github.com/EighthCoincoin/Source/blob/master/doc/build-osx.md

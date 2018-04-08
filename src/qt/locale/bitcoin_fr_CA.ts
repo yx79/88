@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Deviant</source>
-        <translation>Au sujet de Deviant</translation>
+        <source>About EighthCoin</source>
+        <translation>Au sujet de EighthCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Deviant&lt;/b&gt; version</source>
-        <translation>Version de &lt;b&gt;Deviant&lt;/b&gt;</translation>
+        <source>&lt;b&gt;EighthCoin&lt;/b&gt; version</source>
+        <translation>Version de &lt;b&gt;EighthCoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Deviant developers</source>
+Copyright © 2014 The EighthCoin developers</source>
         <translation>Copyright © 2009-2014 Les développeurs Bitcoin
 Copyright © 2012-2014 Les développeurs NovaCoin
-Copyright © 2014 Les développeurs Deviant</translation>
+Copyright © 2014 Les développeurs EighthCoin</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,7 +60,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Deviant addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your EighthCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Ce sont vos adresses pour recevoir vos paiements. Vous pouvez utiliser une adresse différente pour chaque réception afin d&apos;identifier facilement le payeur.</translation>
     </message>
     <message>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Deviant address</source>
-        <translation>Signer un message afin de valider l&apos;identité de votre adresse Deviant</translation>
+        <source>Sign a message to prove you own a EighthCoin address</source>
+        <translation>Signer un message afin de valider l&apos;identité de votre adresse EighthCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Deviant address</source>
-        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse Deviant spécifique.</translation>
+        <source>Verify a message to ensure it was signed with a specified EighthCoin address</source>
+        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse EighthCoin spécifique.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -227,7 +227,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>ATTENTION : Si vous cryptez votre portefeuille et perdez votre passphrase, vous ne pourrez plus accéder à vos Deviants</translation>
+        <translation>ATTENTION : Si vous cryptez votre portefeuille et perdez votre passphrase, vous ne pourrez plus accéder à vos EighthCoins</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>Deviant will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>L&apos;application Deviant va désormais se terminer afin de finaliser le processus de cryptage. Merci de noter que le cryptage du portefeuille ne garantit pas de se prémunir du vol via l&apos;utilisation de malware, qui auraient pu infecter votre ordinateur. </translation>
+        <source>EighthCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>L&apos;application EighthCoin va désormais se terminer afin de finaliser le processus de cryptage. Merci de noter que le cryptage du portefeuille ne garantit pas de se prémunir du vol via l&apos;utilisation de malware, qui auraient pu infecter votre ordinateur. </translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Deviant</source>
-        <translation>Afficher des informations au sujet du Deviant</translation>
+        <source>Show information about EighthCoin</source>
+        <translation>Afficher des informations au sujet du EighthCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Deviant address</source>
-        <translation>Envoyer des monnaies vers une adresse Deviant</translation>
+        <source>Send coins to a EighthCoin address</source>
+        <translation>Envoyer des monnaies vers une adresse EighthCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Deviant</source>
-        <translation>Modification des options de configuration de Deviant</translation>
+        <source>Modify configuration options for EighthCoin</source>
+        <translation>Modification des options de configuration de EighthCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>Deviant</source>
-        <translation>Deviant</translation>
+        <source>EighthCoin</source>
+        <translation>EighthCoin</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Deviant</source>
-        <translation>A propos de Deviant</translation>
+        <source>&amp;About EighthCoin</source>
+        <translation>A propos de EighthCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Deviant client</source>
-        <translation>Client Deviant</translation>
+        <source>EighthCoin client</source>
+        <translation>Client EighthCoin</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Deviant network</source>
-        <translation><numerusform>%n connexion active au réseau Deviant</numerusform><numerusform>%n connexions actives au réseau Deviant</numerusform></translation>
+        <source>%n active connection(s) to EighthCoin network</source>
+        <translation><numerusform>%n connexion active au réseau EighthCoin</numerusform><numerusform>%n connexions actives au réseau EighthCoin</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,8 +600,8 @@ Adresse : %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Deviant address or malformed URI parameters.</source>
-        <translation>L&apos;adresse du portefeuille Deviant n&apos;as pas pu être correctement identifiée, car invalide ou malformée.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid EighthCoin address or malformed URI parameters.</source>
+        <translation>L&apos;adresse du portefeuille EighthCoin n&apos;as pas pu être correctement identifiée, car invalide ou malformée.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,8 +723,8 @@ Adresse : %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Deviant can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale a été rencontrée. L&apos;application Deviant ne peut plus être s&apos;exécuter de façon correcte et doit se terminer.</translation>
+        <source>A fatal error occurred. EighthCoin can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale a été rencontrée. L&apos;application EighthCoin ne peut plus être s&apos;exécuter de façon correcte et doit se terminer.</translation>
     </message>
 </context>
 <context>
@@ -1057,8 +1057,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Deviant address.</source>
-        <translation>L&apos;adresse &quot;%1&quot; renseignée n&apos;est pas une adresse Deviant valide.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid EighthCoin address.</source>
+        <translation>L&apos;adresse &quot;%1&quot; renseignée n&apos;est pas une adresse EighthCoin valide.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,8 +1076,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Deviant-Qt</source>
-        <translation>Deviant-Qt</translation>
+        <source>EighthCoin-Qt</source>
+        <translation>EighthCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1149,13 +1149,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Deviant after logging in to the system.</source>
-        <translation>Démarrage automatique du client Deviant lors de la connexion au système</translation>
+        <source>Automatically start EighthCoin after logging in to the system.</source>
+        <translation>Démarrage automatique du client EighthCoin lors de la connexion au système</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Deviant on system login</source>
-        <translation>&amp;Démarrage du client Deviant à la connexion au système</translation>
+        <source>&amp;Start EighthCoin on system login</source>
+        <translation>&amp;Démarrage du client EighthCoin à la connexion au système</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1164,8 +1164,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Deviant client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouverture automatique du port client de Deviant sur le routeur. Ceci ne fonctionne que dans le cas où le support UPnP sur votre routeur existe et est actif.</translation>
+        <source>Automatically open the EighthCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouverture automatique du port client de EighthCoin sur le routeur. Ceci ne fonctionne que dans le cas où le support UPnP sur votre routeur existe et est actif.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1174,8 +1174,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Deviant network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connexion au réseau Deviant à travers un proxy SOCKS (e.g. Connexion via le réseau Tor).</translation>
+        <source>Connect to the EighthCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connexion au réseau EighthCoin à travers un proxy SOCKS (e.g. Connexion via le réseau Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1249,8 +1249,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Deviant.</source>
-        <translation>La langue d&apos;interface de de l&apos;utilisateur peut être définie ici. Ces modification seront effectives après redémarrage de l&apos;application Deviant</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting EighthCoin.</source>
+        <translation>La langue d&apos;interface de de l&apos;utilisateur peut être définie ici. Ces modification seront effectives après redémarrage de l&apos;application EighthCoin</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1316,8 +1316,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Deviant.</source>
-        <translation>Les paramètres prendront effet après redémarrage du client Deviant</translation>
+        <source>This setting will take effect after restarting EighthCoin.</source>
+        <translation>Les paramètres prendront effet après redémarrage du client EighthCoin</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1335,8 +1335,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Deviant network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées peuvent être obsolètes. Votre portefeuille se synchronise automatiquement avec le réseau Deviant mais ce processus n&apos;est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the EighthCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées peuvent être obsolètes. Votre portefeuille se synchronise automatiquement avec le réseau EighthCoin mais ce processus n&apos;est pas encore terminé.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1577,8 +1577,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Deviant-Qt help message to get a list with possible Deviant command-line options.</source>
-        <translation>Afficher le message d&apos;aide Deviant-Qt afin d&apos;obtenir la liste des options de de L&apos;outil en ligne de commande Deviant</translation>
+        <source>Show the EighthCoin-Qt help message to get a list with possible EighthCoin command-line options.</source>
+        <translation>Afficher le message d&apos;aide EighthCoin-Qt afin d&apos;obtenir la liste des options de de L&apos;outil en ligne de commande EighthCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1597,13 +1597,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="-104"/>
-        <source>Deviant - Debug window</source>
-        <translation>Deviant - Fenêtre de déboggage</translation>
+        <source>EighthCoin - Debug window</source>
+        <translation>EighthCoin - Fenêtre de déboggage</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Deviant Core</source>
-        <translation>Deviant Core</translation>
+        <source>EighthCoin Core</source>
+        <translation>EighthCoin Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1612,8 +1612,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Deviant debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ouvrir le fichier journal de debug Deviant au sein du répertoire courant. Cette opération peut prendre quelques secondes dans le cas de fichiers journaux volumineux.</translation>
+        <source>Open the EighthCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ouvrir le fichier journal de debug EighthCoin au sein du répertoire courant. Cette opération peut prendre quelques secondes dans le cas de fichiers journaux volumineux.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1622,8 +1622,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the Deviant RPC console.</source>
-        <translation>Bienvenue sur la console Deviant RPC.</translation>
+        <source>Welcome to the EighthCoin RPC console.</source>
+        <translation>Bienvenue sur la console EighthCoin RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1731,8 +1731,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 DEV</source>
-        <translation>123.456 DEV {0.00 ?}</translation>
+        <source>0.00 8TH</source>
+        <translation>123.456 8TH {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1801,8 +1801,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 DEV</source>
-        <translation>123.456 DEV</translation>
+        <source>123.456 8TH</source>
+        <translation>123.456 8TH</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1816,8 +1816,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a Deviant address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse Deviant (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EighthCoin address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Entrer une adresse EighthCoin (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1916,8 +1916,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid Deviant address</source>
-        <translation>AVERTISSEMENT: Adresse Deviant Invalide</translation>
+        <source>WARNING: Invalid EighthCoin address</source>
+        <translation>AVERTISSEMENT: Adresse EighthCoin Invalide</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1927,7 +1927,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location line="+4"/>
         <source>WARNING: unknown change address</source>
-        <translation>AVERTISSEMET: Adresse Deviant Invalide</translation>
+        <translation>AVERTISSEMET: Adresse EighthCoin Invalide</translation>
     </message>
 </context>
 <context>
@@ -1990,8 +1990,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Deviant address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse Deviant (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EighthCoin address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Entrer une adresse EighthCoin (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2015,7 +2015,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse Deviant (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation>Entrer une adresse EighthCoin (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2051,8 +2051,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Deviant address</source>
-        <translation>Signer le message afin de prouver l&apos;identité de votre adresse Deviant</translation>
+        <source>Sign the message to prove you own this EighthCoin address</source>
+        <translation>Signer le message afin de prouver l&apos;identité de votre adresse EighthCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2083,8 +2083,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Deviant address</source>
-        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse Deviant spécifique.</translation>
+        <source>Verify the message to ensure it was signed with the specified EighthCoin address</source>
+        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse EighthCoin spécifique.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2094,8 +2094,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Deviant address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse Deviant (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a EighthCoin address (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Entrer une adresse EighthCoin (e.g. D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2104,8 +2104,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Deviant signature</source>
-        <translation>Entrer une signature Deviant</translation>
+        <source>Enter EighthCoin signature</source>
+        <translation>Entrer une signature EighthCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2683,8 +2683,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>Deviant version</source>
-        <translation>Version Deviant</translation>
+        <source>EighthCoin version</source>
+        <translation>Version EighthCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2693,8 +2693,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Deviantd</source>
-        <translation>Envoyer commande à -server ou Deviantd</translation>
+        <source>Send command to -server or EighthCoind</source>
+        <translation>Envoyer commande à -server ou EighthCoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,13 +2713,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: Deviant.conf)</source>
-        <translation>Spécifier le fichier de configuration (defaut: Deviant.conf)</translation>
+        <source>Specify configuration file (default: EighthCoin.conf)</source>
+        <translation>Spécifier le fichier de configuration (defaut: EighthCoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Deviantd.pid)</source>
-        <translation>Spécifier le fichier pid (defaut: Deviantd.pid)
+        <source>Specify pid file (default: EighthCoind.pid)</source>
+        <translation>Spécifier le fichier pid (defaut: EighthCoind.pid)
 </translation>
     </message>
     <message>
@@ -2737,13 +2737,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Deviantrpc
+rpcuser=EighthCoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;EighthCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2849,8 +2849,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Deviant will not work properly.</source>
-        <translation>Avertissement: Veuillez vérifier la date et l&apos;heure de votre ordinateur. Deviant ne pourra pas fonctionner correctement si l&apos;horloge est réglée de façon incorrecte</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong EighthCoin will not work properly.</source>
+        <translation>Avertissement: Veuillez vérifier la date et l&apos;heure de votre ordinateur. EighthCoin ne pourra pas fonctionner correctement si l&apos;horloge est réglée de façon incorrecte</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3156,7 +3156,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. Deviant is shutting down.</source>
+        <source>Initialization sanity check failed. EighthCoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3221,13 +3221,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Deviant</source>
-        <translation>Erreur de chargement du fichier wallet.dat: le portefeuille nécessite une version plus récente de l&apos;application Deviant</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of EighthCoin</source>
+        <translation>Erreur de chargement du fichier wallet.dat: le portefeuille nécessite une version plus récente de l&apos;application EighthCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Deviant to complete</source>
-        <translation>le portefeuille nécessite d&apos;être réédité : Merci de relancer l&apos;application Deviant</translation>
+        <source>Wallet needed to be rewritten: restart EighthCoin to complete</source>
+        <translation>le portefeuille nécessite d&apos;être réédité : Merci de relancer l&apos;application EighthCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3291,8 +3291,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. Deviant is probably already running.</source>
-        <translation>Connexion au port %s impossible. L&apos;application Deviant est probablement déjà en cours d&apos;exécution</translation>
+        <source>Unable to bind to %s on this computer. EighthCoin is probably already running.</source>
+        <translation>Connexion au port %s impossible. L&apos;application EighthCoin est probablement déjà en cours d&apos;exécution</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3331,7 +3331,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Deviant Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Deviant is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. EighthCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

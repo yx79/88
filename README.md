@@ -1,8 +1,8 @@
-Deviant Coin Specification
+EighthCoin Coin Specification
 
-Coin Name : Deviant Coin
+Coin Name : EighthCoin Coin
 
-Ticker : DEV
+Ticker : 8TH
 
 Coin Type :  POS / Masternode
 
@@ -20,6 +20,6 @@ RPC Port: 7117
 
 Network Port: 7118
 
-Find the Compiled Wallets here https://github.com/Deviantcoin/Wallet
+Find the Compiled Wallets here https://github.com/EighthCoincoin/Wallet
 
-Wallet Masternode Setup Guides https://github.com/Deviantcoin/Wallet/wiki
+Wallet Masternode Setup Guides https://github.com/EighthCoincoin/Wallet/wiki
