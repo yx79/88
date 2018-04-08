@@ -94,8 +94,8 @@ public:
 	printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 	printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("0x00000e80818377172e1b560900044dd708bd1e563dc1a9106673f5c3b3ddb51b"));
-        assert(genesis.hashMerkleRoot == uint256("0xddd83451ab33dd4e4a3d7eff2d6e6cb1c0e31a4cb73622d96872a680ad9066fa"));
+        assert(hashGenesisBlock == uint256("0xb6bf08266de7fb18a0ed7eb475ec043f40bd46cc75015d87bcef9e0c565f020f"));
+        assert(genesis.hashMerkleRoot == uint256("0x94a9f4b158e2711bb54146aa8711209d204829e8cec5dc79478c7fc10501558a"));
 
         // EDITING: Address Prefixes
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,18); // 8
