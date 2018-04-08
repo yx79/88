@@ -13,14 +13,8 @@ DEFS=-DBOOST_SPIRIT_THREADSAFE
 DEFS += $(addprefix -I,$(CURDIR) $(CURDIR)/obj $(BOOST_INCLUDE_PATH) $(BDB_INCLUDE_PATH) $(OPENSSL_INCLUDE_PATH))
 LIBS = $(addprefix -L,$(BOOST_LIB_PATH) $(BDB_LIB_PATH) $(OPENSSL_LIB_PATH))
 
-LMODE = dynamic
-LMODE2 = dynamic
-ifdef STATIC
-	LMODE = static
-	ifeq (${STATIC}, all)
-		LMODE2 = static
-	endif
-endif
+LMODE = static
+LMODE2 = static
 
 LIBS += \
  -Wl,-B$(LMODE)
