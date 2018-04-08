@@ -161,7 +161,7 @@ public:
 	printf("Testnet: genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 	printf("Testnet: genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("0x00000e80818377172e1b560900044dd708bd1e563dc1a9106673f5c3b3ddb51b"));
+        assert(hashGenesisBlock == uint256("0xb6bf08266de7fb18a0ed7eb475ec043f40bd46cc75015d87bcef9e0c565f020f"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
