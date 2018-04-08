@@ -90,6 +90,8 @@ public:
         genesis.nNonce   = 1745515;
 		
         hashGenesisBlock = genesis.GetHash();
+	    
+	printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 
         assert(hashGenesisBlock == uint256("0x00000e80818377172e1b560900044dd708bd1e563dc1a9106673f5c3b3ddb51b"));
         assert(genesis.hashMerkleRoot == uint256("0xddd83451ab33dd4e4a3d7eff2d6e6cb1c0e31a4cb73622d96872a680ad9066fa"));
