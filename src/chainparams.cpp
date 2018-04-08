@@ -89,10 +89,7 @@ public:
 	genesis.nBits = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce   = 1745515;
 		
-        hashGenesisBlock = genesis.GetHash();
-	    
-	printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-	printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        hashGenesisBlock = genesis.GetHash(); 
 
         assert(hashGenesisBlock == uint256("0xb6bf08266de7fb18a0ed7eb475ec043f40bd46cc75015d87bcef9e0c565f020f"));
         assert(genesis.hashMerkleRoot == uint256("0x94a9f4b158e2711bb54146aa8711209d204829e8cec5dc79478c7fc10501558a"));
@@ -157,9 +154,7 @@ public:
         strDataDir = "testnet";
 
         hashGenesisBlock = genesis.GetHash();
-	    
-	printf("Testnet: genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-	printf("Testnet: genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+	     
 
         assert(hashGenesisBlock == uint256("0xb6bf08266de7fb18a0ed7eb475ec043f40bd46cc75015d87bcef9e0c565f020f"));
 

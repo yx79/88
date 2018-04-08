@@ -14,15 +14,15 @@ INCLUDEPATHS= \
  -I"$(CURDIR)" \
  -I"$(CURDIR)"/obj \
  -I"$(DEPSDIR)/include" \
- -I"$(DEPSDIR)/Cellar/boost/1.59.0/include" \
- -I"$(DEPSDIR)/Cellar/berkeley-db4/4.8.30/include" \
- -I"$(DEPSDIR)/openssl-1.0.1p/include"
+ -I"$(DEPSDIR)/Cellar/boost@1.57/1.57.0/include" \
+ -I"$(DEPSDIR)/Cellar/berkeley-db@4/4.8.30/include" \
+ -I"$(DEPSDIR)/Cellar/openssl/1.0.2n/include"
 
 LIBPATHS= \
  -L"$(DEPSDIR)/lib" \
- -L"$(DEPSDIR)/Cellar/boost/1.59.0/lib" \
- -L"$(DEPSDIR)/Cellar/berkeley-db4/4.8.30/lib" \
- -L"$(DEPSDIR)/openssl-1.0.1p/lib"
+ -L"$(DEPSDIR)/Cellar/boost@1.57/1.57.0/lib" \
+ -L"$(DEPSDIR)/Cellar/berkeley-db@4/4.8.30/lib" \
+ -L"$(DEPSDIR)/Cellar/openssl/1.0.2n/lib"
 
 USE_UPNP:=1
 USE_WALLET:=1
@@ -30,39 +30,25 @@ USE_IPV6:=1
 
 LIBS= -dead_strip
 
-ifdef STATIC
 # Build STATIC if you are redistributing the EighthCoind binary
 LIBS += \
- $(DEPSDIR)/lib/db48/libdb_cxx-4.8.a \
- $(DEPSDIR)/lib/libboost_system.a \
- $(DEPSDIR)/lib/libboost_filesystem.a \
- $(DEPSDIR)/lib/libboost_program_options.a \
- $(DEPSDIR)/lib/libboost_thread-mt.a \
- $(DEPSDIR)/lib/libssl.a \
- $(DEPSDIR)/lib/libcrypto.a \
+ $(DEPSDIR)/Cellar/berkeley-db@4/4.8.30/lib/libdb_cxx-4.8.a \
+ $(DEPSDIR)/Cellar/boost@1.57/1.57.0/lib/libboost_system.a \
+ $(DEPSDIR)/Cellar/boost@1.57/1.57.0/lib/libboost_filesystem.a \
+ $(DEPSDIR)/Cellar/boost@1.57/1.57.0/lib/libboost_program_options.a \
+ $(DEPSDIR)/Cellar/boost@1.57/1.57.0/lib/libboost_thread-mt.a \
+ $(DEPSDIR)/Cellar/openssl/1.0.2n/lib/libssl.a \
+ $(DEPSDIR)/Cellar/openssl/1.0.2n/lib/libcrypto.a \
  -lz
-else
-LIBS += \
- -l db_cxx-4.8 \
- -l boost_system \
- -l boost_filesystem \
- -l boost_program_options \
- -l boost_thread-mt \
- -l ssl \
- -l crypto \
- -l z
-endif
+
 
 DEFS=-DMAC_OSX -DMSG_NOSIGNAL=0 -DBOOST_SPIRIT_THREADSAFE
 
-ifdef RELEASE
 # Compile for maximum compatibility and smallest size.
 # This requires that dependencies are compiled
 # the same way.
-CFLAGS = -mmacosx-version-min=10.8 -arch x86_64 -O3
-else
-DEBUGFLAGS = -g
-endif
+CFLAGS = -mmacosx-version-min=10.13 -arch x86_64 -O3
+
 
 # ppc doesn't work because we don't support big-endian
 CFLAGS += -Wall -Wextra -Wformat -Wno-ignored-qualifiers -Wformat-security -Wno-unused-parameter -Wunused-function -Wunused-variable -fpermissive -Wconversion-null -Wno-deprecated-declarations\
