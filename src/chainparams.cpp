@@ -157,6 +157,10 @@ public:
         strDataDir = "testnet";
 
         hashGenesisBlock = genesis.GetHash();
+	    
+	printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+	printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+
         assert(hashGenesisBlock == uint256("0x00000e80818377172e1b560900044dd708bd1e563dc1a9106673f5c3b3ddb51b"));
 
         vFixedSeeds.clear();
