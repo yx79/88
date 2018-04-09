@@ -11,6 +11,13 @@
 #include <openssl/ecdsa.h>
 #include <openssl/obj_mac.h>
 
+
+struct ECDSA_SIG_st {
+     BIGNUM *r;
+     BIGNUM *s;
+ };
+
+
 namespace {
 
 // Generate a private key from just the secret parameter
