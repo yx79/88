@@ -34,7 +34,13 @@
 #include <openssl/rand.h>
 #include <openssl/bn.h>
 
+#include <openssl/sha.h>
+#include <openssl/ripemd.h>
+
 #include <stdint.h>
+#include <inttypes.h>
+
+#include "netbase.h" // for AddTimeData
 
 
 class CNetAddr;
