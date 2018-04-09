@@ -146,13 +146,12 @@ void CECKey::GetSecretBytes(unsigned char vch[32]) const {
 
 void CECKey::SetSecretBytes(const unsigned char vch[32]) {
     bool ret;
-    BIGNUM bn;
-    BN_init(&bn);
-    ret = BN_bin2bn(vch, 32, &bn) != NULL;
+    BIGNUM *bn;
+    ret = BN_bin2bn(vch, 32, bn.bn) != NULL;
     assert(ret);
-    ret = EC_KEY_regenerate_key(pkey, &bn) != 0;
+    ret = EC_KEY_regenerate_key(pkey, bn.bn) != 0;
     assert(ret);
-    BN_clear_free(&bn);
+    BN_clear_free(bn.bn);
 }
 
 int CECKey::GetPrivKeySize(bool fCompressed) {
