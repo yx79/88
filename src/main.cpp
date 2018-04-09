@@ -1361,7 +1361,7 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
 	// Base reward.
 	int64_t nSubsidy = 0 * COIN;
-	if (nHeight == 1)
+	if (nHeight == 8)
 		nSubsidy = 88888888 * COIN;
 	// add fees.
 	return nSubsidy + nFees;
