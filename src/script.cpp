@@ -1000,7 +1000,7 @@ bool EvalScript(vector<vector<unsigned char> >& stack, const CScript& script, co
                         break;
 
                     case OP_MUL:
-                        if (!BN_mul(bn.bn, bn1, bn2.bn, pctx))
+                        if (!BN_mul(bn.bn, bn1.bn, bn2.bn, pctx))
                             return false;
                         break;
 
