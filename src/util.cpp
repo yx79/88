@@ -38,7 +38,6 @@ namespace boost {
 #include <boost/foreach.hpp>
 #include <boost/thread.hpp>
 #include <openssl/crypto.h>
-#include <openssl/rand.h>
 #include <openssl/err.h>
 #include <stdarg.h>
 
@@ -64,7 +63,7 @@ namespace boost {
 #include <io.h> /* for _commit */
 #include "shlobj.h"
 #elif defined(__linux__)
-# include <sys/prctl.h>
+#include <sys/prctl.h>
 #endif
 
 using namespace std;
