@@ -2329,7 +2329,7 @@ bool CTransaction::GetCoinAge(CTxDB& txdb, const CBlockIndex* pindexPrev, uint64
 {
 	CBigNum bnCentSecond = 0;  // coin age in the unit of cent-seconds
 	nCoinAge = 0;
-	int nStakeMinConfirmations = 720;
+	int nStakeMinConfirmations = 18;
 
 	if (IsCoinBase())
 		return true;
