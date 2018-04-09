@@ -21,11 +21,7 @@ class CValidationState;
 #define START_MASTERNODE_PAYMENTS_TESTNET 1522857570   
 #define START_MASTERNODE_PAYMENTS 1522857570
 
-static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
-static const int64_t DARKSEND_POOL_MAX = (879999.99*COIN);
 
-static const int64_t STATIC_REWARD = 88 * COIN;
-static const int64_t TARGET_SPACING = 60; //1 min
 
 #define INSTANTX_SIGNATURES_REQUIRED           10
 #define INSTANTX_SIGNATURES_TOTAL              15
@@ -66,6 +62,11 @@ static const int64_t MAX_MONEY = 888888888 * COIN; //
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
+
+static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
+static const int64_t DARKSEND_POOL_MAX = (879999.99*COIN);
+static const int64_t TARGET_SPACING = 60; //1 min
+static const int64_t COIN_YEAR_REWARD = 88 * CENT;
 
 static const int64_t DRIFT = 480;
 inline int64_t FutureDrift(int64_t nTime) { return nTime + DRIFT; }
