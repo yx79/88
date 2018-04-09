@@ -6,6 +6,8 @@
 #ifndef BITCOIN_UTIL_H
 #define BITCOIN_UTIL_H
 
+#include "uint256.h"
+
 #ifndef WIN32
 #include <sys/types.h>
 #include <sys/time.h>
@@ -16,10 +18,10 @@
 #include "tinyformat.h"
 
 #include <map>
-#include <list>
-#include <utility>
 #include <vector>
 #include <string>
+#include <list>
+#include <utility>
 
 #include <boost/thread.hpp>
 #include <boost/filesystem.hpp>
