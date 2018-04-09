@@ -127,7 +127,7 @@ public:
 
 #ifdef WIN32
         // Seed OpenSSL PRNG with current contents of the screen
-        RAND_bytes();
+        RAND_screen();
 #endif
 
         // Seed OpenSSL PRNG with performance counter
