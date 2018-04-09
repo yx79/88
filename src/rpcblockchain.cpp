@@ -92,12 +92,11 @@ double GetPoSKernelPS()
             }
             pindexPrevStake = pindex;
         }
-        printf("pindex = %s\n", pindex.ToString().c_str());
         pindex = pindex->pprev;
     }
 
     double result = 0;
-    printf("nStakesTime = %s\n", nStakesTime.ToString().c_str());
+    printf("nStakesTime = %d\n", nStakesTime);
     if (nStakesTime)
         result = dStakeKernelsTriedAvg / nStakesTime;
 
