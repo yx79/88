@@ -16,10 +16,21 @@ Coin Maturity : 80
 
 MAX SUPPLY : 88,000,000 Coins
 
-RPC Port: 7117
+RPC Port: 8889
 
-Network Port: 7118
+Network Port: 8888
 
 Find the Compiled Wallets here https://github.com/EighthCoincoin/Wallet
 
 Wallet Masternode Setup Guides https://github.com/EighthCoincoin/Wallet/wiki
+
+
+
+
+rpcuser=admin
+rpcpassword=root
+rpcallowip=127.0.0.1
+rpcport=8889
+listen=1
+server=1
+addnode=35.197.22.150
