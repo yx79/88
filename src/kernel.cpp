@@ -331,7 +331,7 @@ bool CheckKernel(CBlockIndex* pindexPrev, unsigned int nBits, int64_t nTime, con
 		return false; // only count coins meeting min age requirement
 
 	int nDepth;
-	int nStakeMinConfirmations = 720;
+	int nStakeMinConfirmations = 18;
 	if (IsConfirmedInNPrevBlocks(txindex, pindexPrev, nStakeMinConfirmations - 1, nDepth))
 		return false;
 
