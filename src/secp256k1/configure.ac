@@ -105,120 +105,14 @@ AC_ARG_WITH([asm], [AS_HELP_STRING([--with-asm=x86_64|no|auto]
 [Specify assembly optimizations to use. Default is auto])],[req_asm=$withval], [req_asm=x86_64])
 
 
-AC_MSG_CHECKING([for __builtin_expect])
 AC_COMPILE_IFELSE([AC_LANG_SOURCE([[void myfunc() {__builtin_expect(0,0);}]])],
     [ AC_MSG_RESULT([yes]);AC_DEFINE(HAVE_BUILTIN_EXPECT,1,[Define this symbol if __builtin_expect is available]) ],
     [ AC_MSG_RESULT([no])
     ])
 
-if test x"$req_asm" = x"auto"; then
-  SECP_64BIT_ASM_CHECK
-  if test x"$has_64bit_asm" = x"yes"; then
-    set_asm=x86_64
-  fi
-  if test x"$set_asm" = x; then
-    set_asm=no
-  fi
-else
-  set_asm=$req_asm
-  case $set_asm in
-  x86_64)
-    SECP_64BIT_ASM_CHECK
-    if test x"$has_64bit_asm" != x"yes"; then
-      AC_MSG_ERROR([x86_64 assembly optimization requested but not available])
-    fi
-    ;;
-  no)
-    ;;
-  *)
-    AC_MSG_ERROR([invalid assembly optimization selection])
-    ;;
-  esac
-fi
 
-if test x"$req_field" = x"auto"; then
-  if test x"set_asm" = x"x86_64"; then
-    set_field=64bit
-  fi
-  if test x"$set_field" = x; then
-    SECP_INT128_CHECK
-    if test x"$has_int128" = x"yes"; then
-      set_field=64bit
-    fi
-  fi
-  if test x"$set_field" = x; then
-    set_field=32bit
-  fi
-else
-  set_field=$req_field
-  case $set_field in
-  64bit)
-    if test x"$set_asm" != x"x86_64"; then
-      SECP_INT128_CHECK
-      if test x"$has_int128" != x"yes"; then
-        AC_MSG_ERROR([64bit field explicitly requested but neither __int128 support or x86_64 assembly available])
-      fi
-    fi
-    ;;
-  32bit)
-    ;;
-  *)
-    AC_MSG_ERROR([invalid field implementation selection])
-    ;;
-  esac
-fi
 
-if test x"$req_scalar" = x"auto"; then
-  SECP_INT128_CHECK
-  if test x"$has_int128" = x"yes"; then
-    set_scalar=64bit
-  fi
-  if test x"$set_scalar" = x; then
-    set_scalar=32bit
-  fi
-else
-  set_scalar=$req_scalar
-  case $set_scalar in
-  64bit)
-    SECP_INT128_CHECK
-    if test x"$has_int128" != x"yes"; then
-      AC_MSG_ERROR([64bit scalar explicitly requested but __int128 support not available])
-    fi
-    ;;
-  32bit)
-    ;;
-  *)
-    AC_MSG_ERROR([invalid scalar implementation selected])
-    ;;
-  esac
-fi
-
-if test x"$req_bignum" = x"auto"; then
-  SECP_GMP_CHECK
-  if test x"$has_gmp" = x"yes"; then
-    set_bignum=gmp
-  fi
-
-  if test x"$set_bignum" = x; then
-    set_bignum=no
-  fi
-else
-  set_bignum=$req_bignum
-  case $set_bignum in
-  gmp)
-    SECP_GMP_CHECK
-    if test x"$has_gmp" != x"yes"; then
-      AC_MSG_ERROR([gmp bignum explicitly requested but libgmp not available])
-    fi
-    ;;
-  no)
-    ;;
-  *)
-    AC_MSG_ERROR([invalid bignum implementation selection])
-    ;;
-  esac
-fi
-
+ 
 # select assembly optimization
 case $set_asm in
 x86_64)
