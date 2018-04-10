@@ -30,37 +30,6 @@ if test x"$ac_cv_prog_cc_c89" = x"no"; then
   AC_MSG_ERROR([c89 compiler support required])
 fi
 
-case $host_os in
-  *darwin*)
-     if  test x$cross_compiling != xyes; then
-       AC_PATH_PROG([BREW],brew,)
-       if test x$BREW != x; then
-         dnl These Homebrew packages may be keg-only, meaning that they won't be found
-         dnl in expected paths because they may conflict with system files. Ask
-         dnl Homebrew where each one is located, then adjust paths accordingly.
-
-         openssl_prefix=`$BREW --prefix openssl 2>/dev/null`
-         gmp_prefix=`$BREW --prefix gmp 2>/dev/null`
-         if test x$openssl_prefix != x; then
-           PKG_CONFIG_PATH="$openssl_prefix/lib/pkgconfig:$PKG_CONFIG_PATH"
-           export PKG_CONFIG_PATH
-         fi
-         if test x$gmp_prefix != x; then
-           GMP_CPPFLAGS="-I$gmp_prefix/include"
-           GMP_LIBS="-L$gmp_prefix/lib"
-         fi
-       else
-         AC_PATH_PROG([PORT],port,)
-         dnl if homebrew isn't installed and macports is, add the macports default paths
-         dnl as a last resort.
-         if test x$PORT != x; then
-           CPPFLAGS="$CPPFLAGS -isystem /opt/local/include"
-           LDFLAGS="$LDFLAGS -L/opt/local/lib"
-         fi
-       fi
-     fi
-   ;;
-esac
 
 CFLAGS="$CFLAGS -W"
 
@@ -123,19 +92,18 @@ AC_ARG_ENABLE(module_recovery,
     [enable_module_recovery=$enableval],
     [enable_module_recovery=no])
 
-AC_ARG_WITH([field], [AS_HELP_STRING([--with-field=64bit|32bit|auto],
-[Specify Field Implementation. Default is auto])],[req_field=$withval], [req_field=auto])
+AC_ARG_WITH([field], [AS_HELP_STRING([--with-field=32bit],
+[Specify Field Implementation. Default is auto])],[req_field=$withval], [req_field=32bit])
 
 AC_ARG_WITH([bignum], [AS_HELP_STRING([--with-bignum=gmp|no|auto],
-[Specify Bignum Implementation. Default is auto])],[req_bignum=$withval], [req_bignum=auto])
+[Specify Bignum Implementation. Default is auto])],[req_bignum=$withval], [req_bignum=gmp])
 
-AC_ARG_WITH([scalar], [AS_HELP_STRING([--with-scalar=64bit|32bit|auto],
-[Specify scalar implementation. Default is auto])],[req_scalar=$withval], [req_scalar=auto])
+AC_ARG_WITH([scalar], [AS_HELP_STRING([--with-scalar=32bit],
+[Specify scalar implementation. Default is auto])],[req_scalar=$withval], [req_scalar=32bit])
 
 AC_ARG_WITH([asm], [AS_HELP_STRING([--with-asm=x86_64|no|auto]
-[Specify assembly optimizations to use. Default is auto])],[req_asm=$withval], [req_asm=auto])
+[Specify assembly optimizations to use. Default is auto])],[req_asm=$withval], [req_asm=x86_64])
 
-AC_CHECK_TYPES([__int128])
 
 AC_MSG_CHECKING([for __builtin_expect])
 AC_COMPILE_IFELSE([AC_LANG_SOURCE([[void myfunc() {__builtin_expect(0,0);}]])],
