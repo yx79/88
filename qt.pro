@@ -29,19 +29,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 # workaround for boost 1.58
 DEFINES += BOOST_VARIANT_USE_RELAXED_GET_BY_DEFAULT
 
-win32:BOOST_LIB_SUFFIX=-mgw49-mt-s-1_57
-win32:BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
-win32:BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
-win32:BDB_INCLUDE_PATH=C:/deps/db-6.0.20/build_unix
-win32:BDB_LIB_PATH=C:/deps/db-6.0.20/build_unix
-win32:OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.2/include
-win32:OPENSSL_LIB_PATH=C:/deps/openssl-1.0.2
-win32:MINIUPNPC_INCLUDE_PATH=C:/deps/
-win32:MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-win32:QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
-win32:QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs		
-
-
+ 
 OBJECTS_DIR = build
 MOC_DIR = build
 UI_DIR = build
@@ -139,7 +127,7 @@ QMAKE_CLEAN += $$PWD/src/leveldb/libleveldb.a; cd $$PWD/src/leveldb ; $(MAKE) cl
 
 
 #Build Secp256k1
-!win32 {
+ 
 INCLUDEPATH += src/secp256k1/include
 LIBS += $$PWD/src/secp256k1/src/libsecp256k1_la-secp256k1.o
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
@@ -150,14 +138,7 @@ LIBS += $$PWD/src/secp256k1/src/libsecp256k1_la-secp256k1.o
     QMAKE_EXTRA_TARGETS += gensecp256k1
     # Gross ugly hack that depends on qmake internals, unfortunately there is no other way to do it.
     QMAKE_CLEAN += $$PWD/src/secp256k1/src/libsecp256k1_la-secp256k1.o; cd $$PWD/src/secp256k1; $(MAKE) clean
-} else {
-    isEmpty(SECP256K1_LIB_PATH) {
-        windows:SECP256K1_LIB_PATH=C:/deps/secp256k1/.libs
-    }
-    isEmpty(SECP256K1_INCLUDE_PATH) {
-        windows:SECP256K1_INCLUDE_PATH=C:/deps/secp256k1/include
-    }
-}
+ 
 
 # regenerate src/build.h
 !windows|contains(USE_BUILD_INFO, 1) {
