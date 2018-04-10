@@ -9,7 +9,7 @@ export PATH=/mnt/mxe/usr/bin:$PATH
 TARGET_OS=NATIVE_WINDOWS make CC=i686-w64-mingw32.static-g++ CXX=i686-w64-mingw32.static-g++ libleveldb.a libmemenv.a
 cd ../..
 
-cd ./src/secp256k1
+cd src/secp256k1
 export PATH=/mnt/mxe/usr/bin:$PATH
 sudo ./autogen.sh
 sudo ./configure --host=i686-w64-mingw32.static --with-bignum=no --enable-module-recovery
