@@ -3386,7 +3386,8 @@ int SecureMsgEncrypt(SecureMessage &smsg, const std::string &addressFrom, const 
     //LogPrint("smessage", "secret_len %d.\n", secret_len);
 
     // -- ECDH_compute_key returns the same P if fed compressed or uncompressed public keys
-    EC_KEY_set_method(pkeyr, EC_KEY_METHOD());
+    ECDH_set_method(pkeyr, &ECDH_OpenSSL());
+//     EC_KEY_set_method(pkeyr, EC_KEY_METHOD());
     int lenP = ECDH_compute_key(&vchP[0], 32, EC_KEY_get0_public_key(pkeyK), pkeyr, NULL);
 
     if (lenP != 32)
