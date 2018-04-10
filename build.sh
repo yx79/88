@@ -11,8 +11,8 @@ cd ../..
 cd src/secp256k1
 export PATH=/mnt/mxe/usr/bin:$PATH
 sudo ./autogen.sh
-sudo ./configure --host=i686-w64-mingw32.static --with-bignum=no --enable-module-recovery --with-field=32bit --with-scalar=32bit --with-asm=x86_64
- sudo TARGET_OS=OS_WINDOWS_CROSSCOMPILE make CC=/mnt/mxe/usr/bin/i686-w64-mingw32.static-g++ CXX=/mnt/mxe/usr/bin/i686-w64-mingw32.static-g++ libsecp256k1.la libsecp256k1.so
+sudo ./configure --host=i686-w64-mingw32.static --with-bignum=no --enable-module-recovery use_tests=yes --with-field=32bit --with-scalar=32bit --with-asm=x86_64
+ sudo TARGET_OS=OS_WINDOWS_CROSSCOMPILE make install CC=/mnt/mxe/usr/bin/i686-w64-mingw32.static-g++ CXX=/mnt/mxe/usr/bin/i686-w64-mingw32.static-g++ libsecp256k1.la libsecp256k1.so
 sudo make install
 cd ../..
 
