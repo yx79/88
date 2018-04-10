@@ -67,13 +67,13 @@ SECP256K1_INLINE static int secp256k1_scalar_check_overflow(const secp256k1_scal
 }
 
 SECP256K1_INLINE static int secp256k1_scalar_reduce(secp256k1_scalar *r, unsigned int overflow) {
-    uint128_t t;
+    uint64_t t;
     VERIFY_CHECK(overflow <= 1);
-    t = (uint128_t)r->d[0] + overflow * SECP256K1_N_C_0;
+    t = (uint64_t)r->d[0] + overflow * SECP256K1_N_C_0;
     r->d[0] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
-    t += (uint128_t)r->d[1] + overflow * SECP256K1_N_C_1;
+    t += (uint64_t)r->d[1] + overflow * SECP256K1_N_C_1;
     r->d[1] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
-    t += (uint128_t)r->d[2] + overflow * SECP256K1_N_C_2;
+    t += (uint64_t)r->d[2] + overflow * SECP256K1_N_C_2;
     r->d[2] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
     t += (uint64_t)r->d[3];
     r->d[3] = t & 0xFFFFFFFFFFFFFFFFULL;
@@ -82,13 +82,13 @@ SECP256K1_INLINE static int secp256k1_scalar_reduce(secp256k1_scalar *r, unsigne
 
 static int secp256k1_scalar_add(secp256k1_scalar *r, const secp256k1_scalar *a, const secp256k1_scalar *b) {
     int overflow;
-    uint128_t t = (uint128_t)a->d[0] + b->d[0];
+    uint64_t t = (uint64_t)a->d[0] + b->d[0];
     r->d[0] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
-    t += (uint128_t)a->d[1] + b->d[1];
+    t += (uint64_t)a->d[1] + b->d[1];
     r->d[1] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
-    t += (uint128_t)a->d[2] + b->d[2];
+    t += (uint64_t)a->d[2] + b->d[2];
     r->d[2] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
-    t += (uint128_t)a->d[3] + b->d[3];
+    t += (uint64_t)a->d[3] + b->d[3];
     r->d[3] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
     overflow = t + secp256k1_scalar_check_overflow(r);
     VERIFY_CHECK(overflow == 0 || overflow == 1);
@@ -97,16 +97,16 @@ static int secp256k1_scalar_add(secp256k1_scalar *r, const secp256k1_scalar *a, 
 }
 
 static void secp256k1_scalar_cadd_bit(secp256k1_scalar *r, unsigned int bit, int flag) {
-    uint128_t t;
+    uint64_t t;
     VERIFY_CHECK(bit < 256);
     bit += ((uint32_t) flag - 1) & 0x100;  /* forcing (bit >> 6) > 3 makes this a noop */
-    t = (uint128_t)r->d[0] + (((uint64_t)((bit >> 6) == 0)) << (bit & 0x3F));
+    t = (uint64_t)r->d[0] + (((uint64_t)((bit >> 6) == 0)) << (bit & 0x3F));
     r->d[0] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
-    t += (uint128_t)r->d[1] + (((uint64_t)((bit >> 6) == 1)) << (bit & 0x3F));
+    t += (uint64_t)r->d[1] + (((uint64_t)((bit >> 6) == 1)) << (bit & 0x3F));
     r->d[1] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
-    t += (uint128_t)r->d[2] + (((uint64_t)((bit >> 6) == 2)) << (bit & 0x3F));
+    t += (uint64_tuint64_t)r->d[2] + (((uint64_t)((bit >> 6) == 2)) << (bit & 0x3F));
     r->d[2] = t & 0xFFFFFFFFFFFFFFFFULL; t >>= 64;
-    t += (uint128_t)r->d[3] + (((uint64_t)((bit >> 6) == 3)) << (bit & 0x3F));
+    t += (uint64_t)r->d[3] + (((uint64_t)((bit >> 6) == 3)) << (bit & 0x3F));
     r->d[3] = t & 0xFFFFFFFFFFFFFFFFULL;
 #ifdef VERIFY
     VERIFY_CHECK((t >> 64) == 0);
@@ -139,13 +139,13 @@ SECP256K1_INLINE static int secp256k1_scalar_is_zero(const secp256k1_scalar *a) 
 
 static void secp256k1_scalar_negate(secp256k1_scalar *r, const secp256k1_scalar *a) {
     uint64_t nonzero = 0xFFFFFFFFFFFFFFFFULL * (secp256k1_scalar_is_zero(a) == 0);
-    uint128_t t = (uint128_t)(~a->d[0]) + SECP256K1_N_0 + 1;
+    uint64_t t = (uint64_t)(~a->d[0]) + SECP256K1_N_0 + 1;
     r->d[0] = t & nonzero; t >>= 64;
-    t += (uint128_t)(~a->d[1]) + SECP256K1_N_1;
+    t += (uint64_t)(~a->d[1]) + SECP256K1_N_1;
     r->d[1] = t & nonzero; t >>= 64;
-    t += (uint128_t)(~a->d[2]) + SECP256K1_N_2;
+    t += (uint64_t)(~a->d[2]) + SECP256K1_N_2;
     r->d[2] = t & nonzero; t >>= 64;
-    t += (uint128_t)(~a->d[3]) + SECP256K1_N_3;
+    t += (uint64_t)(~a->d[3]) + SECP256K1_N_3;
     r->d[3] = t & nonzero;
 }
 
@@ -170,13 +170,13 @@ static int secp256k1_scalar_cond_negate(secp256k1_scalar *r, int flag) {
      * if we are flag = 1, mask = 11...11 and this is identical to secp256k1_scalar_negate */
     uint64_t mask = !flag - 1;
     uint64_t nonzero = (secp256k1_scalar_is_zero(r) != 0) - 1;
-    uint128_t t = (uint128_t)(r->d[0] ^ mask) + ((SECP256K1_N_0 + 1) & mask);
+    uint64_t t = (uint64_t)(r->d[0] ^ mask) + ((SECP256K1_N_0 + 1) & mask);
     r->d[0] = t & nonzero; t >>= 64;
-    t += (uint128_t)(r->d[1] ^ mask) + (SECP256K1_N_1 & mask);
+    t += (uint64_t)(r->d[1] ^ mask) + (SECP256K1_N_1 & mask);
     r->d[1] = t & nonzero; t >>= 64;
-    t += (uint128_t)(r->d[2] ^ mask) + (SECP256K1_N_2 & mask);
+    t += (uint64_t)(r->d[2] ^ mask) + (SECP256K1_N_2 & mask);
     r->d[2] = t & nonzero; t >>= 64;
-    t += (uint128_t)(r->d[3] ^ mask) + (SECP256K1_N_3 & mask);
+    t += (uint64_t)(r->d[3] ^ mask) + (SECP256K1_N_3 & mask);
     r->d[3] = t & nonzero;
     return 2 * (mask == 0) - 1;
 }
@@ -187,7 +187,7 @@ static int secp256k1_scalar_cond_negate(secp256k1_scalar *r, int flag) {
 #define muladd(a,b) { \
     uint64_t tl, th; \
     { \
-        uint128_t t = (uint128_t)a * b; \
+        uint64_t t = (uint64_t)a * b; \
         th = t >> 64;         /* at most 0xFFFFFFFFFFFFFFFE */ \
         tl = t; \
     } \
@@ -202,7 +202,7 @@ static int secp256k1_scalar_cond_negate(secp256k1_scalar *r, int flag) {
 #define muladd_fast(a,b) { \
     uint64_t tl, th; \
     { \
-        uint128_t t = (uint128_t)a * b; \
+        uint64_t t = (uint64_t)a * b; \
         th = t >> 64;         /* at most 0xFFFFFFFFFFFFFFFE */ \
         tl = t; \
     } \
@@ -216,7 +216,7 @@ static int secp256k1_scalar_cond_negate(secp256k1_scalar *r, int flag) {
 #define muladd2(a,b) { \
     uint64_t tl, th, th2, tl2; \
     { \
-        uint128_t t = (uint128_t)a * b; \
+        uint64_t t = (uint64_t)a * b; \
         th = t >> 64;               /* at most 0xFFFFFFFFFFFFFFFE */ \
         tl = t; \
     } \
@@ -504,7 +504,7 @@ static void secp256k1_scalar_reduce_512(secp256k1_scalar *r, const uint64_t *l) 
     : "g"(p0), "g"(p1), "g"(p2), "g"(p3), "g"(p4), "D"(r), "n"(SECP256K1_N_C_0), "n"(SECP256K1_N_C_1)
     : "rax", "rdx", "r8", "r9", "r10", "cc", "memory");
 #else
-    uint128_t c;
+    uint64_t c;
     uint64_t c0, c1, c2;
     uint64_t n0 = l[4], n1 = l[5], n2 = l[6], n3 = l[7];
     uint64_t m0, m1, m2, m3, m4, m5;
@@ -562,11 +562,11 @@ static void secp256k1_scalar_reduce_512(secp256k1_scalar *r, const uint64_t *l) 
 
     /* Reduce 258 bits into 256. */
     /* r[0..3] = p[0..3] + p[4] * SECP256K1_N_C. */
-    c = p0 + (uint128_t)SECP256K1_N_C_0 * p4;
+    c = p0 + (uint64_t)SECP256K1_N_C_0 * p4;
     r->d[0] = c & 0xFFFFFFFFFFFFFFFFULL; c >>= 64;
-    c += p1 + (uint128_t)SECP256K1_N_C_1 * p4;
+    c += p1 + (uint64_t)SECP256K1_N_C_1 * p4;
     r->d[1] = c & 0xFFFFFFFFFFFFFFFFULL; c >>= 64;
-    c += p2 + (uint128_t)p4;
+    c += p2 + (uint64_t)p4;
     r->d[2] = c & 0xFFFFFFFFFFFFFFFFULL; c >>= 64;
     c += p3;
     r->d[3] = c & 0xFFFFFFFFFFFFFFFFULL; c >>= 64;
