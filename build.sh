@@ -2,7 +2,6 @@
 MXE_PATH=$HOME/mxe
 MXE_INCLUDE_PATH=$MXE_PATH/usr/i686-w64-mingw32.static/include
 MXE_LIB_PATH=$MXE_PATH/usr/i686-w64-mingw32.static/lib
-SECP256K1_LIB_PATH=/usr/local/lib
 
 cd src/leveldb
 export PATH=/mnt/mxe/usr/bin:$PATH
