@@ -3769,7 +3769,7 @@ int SecureMsgDecrypt(bool fTestOnly, std::string &address, uint8_t *pHeader, uin
     EC_KEY* pkeyk = ecKeyDest.GetECKey();
     EC_KEY* pkeyR = ecKeyR.GetECKey();
 
-    EC_KEY_set_method(pkeyk, EC_KEY_METHOD());
+    EC_KEY_set_method(pkeyk, EC_KEY_OpenSSL());
     int lenPdec = ECDH_compute_key(&vchP[0], 32, EC_KEY_get0_public_key(pkeyR), pkeyk, NULL);
 
     if (lenPdec != 32)
