@@ -6,18 +6,18 @@ SECP256K1_LIB_PATH=/usr/local/lib
 
 cd src/leveldb
 export PATH=/mnt/mxe/usr/bin:$PATH
-TARGET_OS=NATIVE_WINDOWS make CC=i686-w64-mingw32.static-g++ CXX=i686-w64-mingw32.static-g++ libleveldb.a libmemenv.a
+TARGET_OS=OS_WINDOWS_CROSSCOMPILE make CC=i686-w64-mingw32.static-g++ CXX=i686-w64-mingw32.static-g++ libleveldb.a libmemenv.a
 cd ../..
 
 cd src/secp256k1
 export PATH=/mnt/mxe/usr/bin:$PATH
 sudo ./autogen.sh
 sudo ./configure --host=i686-w64-mingw32.static --with-bignum=no --enable-module-recovery
-TARGET_OS=NATIVE_WINDOWS make CC=i686-w64-mingw32.static-g++ CXX=i686-w64-mingw32.static-g++ libsecp256k1.la libsecp256k1.so
+TARGET_OS=OS_WINDOWS_CROSSCOMPILE make CC=i686-w64-mingw32.static-g++ CXX=i686-w64-mingw32.static-g++ libsecp256k1.la libsecp256k1.so
 sudo make install
 cd ../..
 
-$MXE_PATH/usr/bin/i686-w64-mingw32.static-qmake-qt5 \
+i686-w64-mingw32.static-qmake-qt5 \
 	BOOST_LIB_SUFFIX=-mt \
 	BOOST_THREAD_LIB_SUFFIX=_win32-mt \
 	BOOST_INCLUDE_PATH=$MXE_INCLUDE_PATH \
