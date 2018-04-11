@@ -116,7 +116,7 @@ public:
         //strMasternodePaymentsPubKey = "046f78dcf911fbd61910136f7f0f8d90578f68d0b3ac973b5040fb7afb501b5939f39b108b0569dca71488f5bbf498d92e4d1194f6f941307ffd95f75e76869f0e";
         strDarksendPoolDummyAddress = "8aCd4T6ABfXKTx5VVYs4PnrrXed2p2p19q";
 
-        nLastPOWBlock = 100;
+        nLastPOWBlock = 9999;
         nPOSStartBlock = 1;
     }
 
