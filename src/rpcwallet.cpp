@@ -961,11 +961,11 @@ Value sendmany(const Array& params, bool fHelp)
             "                                    the number of addresses.\n"
             "\nExamples:\n"
             "\nSend two amounts to two different addresses:\n"
-            + HelpExampleCli("sendmany", "\"tabby\" \"{\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\":0.01,\\\"D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i\\\":0.02}\"") +
+            + HelpExampleCli("sendmany", "\"tabby\" \"{\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\":0.01,\\\"8PHhbaTedKYp9MBdJswyTngF3ziaWMiygT \\\":0.02}\"") +
             "\nSend two amounts to two different addresses setting the confirmation and comment:\n"
-            + HelpExampleCli("sendmany", "\"tabby\" \"{\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\":0.01,\\\"D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i\\\":0.02}\" 10 \"testing\"") +
+            + HelpExampleCli("sendmany", "\"tabby\" \"{\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\":0.01,\\\"8PHhbaTedKYp9MBdJswyTngF3ziaWMiygT \\\":0.02}\" 10 \"testing\"") +
             "\nAs a json rpc call\n"
-            + HelpExampleRpc("sendmany", "\"tabby\", \"{\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\":0.01,\\\"D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i\\\":0.02}\", 10, \"testing\"")
+            + HelpExampleRpc("sendmany", "\"tabby\", \"{\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\":0.01,\\\"8PHhbaTedKYp9MBdJswyTngF3ziaWMiygT \\\":0.02}\", 10, \"testing\"")
         );
 
     string strAccount = AccountFromValue(params[0]);
@@ -1053,9 +1053,9 @@ Value addmultisigaddress(const Array& params, bool fHelp)
 
             "\nExamples:\n"
             "\nAdd a multisig address from 2 addresses\n"
-            + HelpExampleCli("addmultisigaddress", "2 \"[\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\",\\\"D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i\\\"]\"") +
+            + HelpExampleCli("addmultisigaddress", "2 \"[\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\",\\\"8PHhbaTedKYp9MBdJswyTngF3ziaWMiygT \\\"]\"") +
             "\nAs json rpc call\n"
-            + HelpExampleRpc("addmultisigaddress", "2, \"[\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\",\\\"D8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i\\\"]\"")
+            + HelpExampleRpc("addmultisigaddress", "2, \"[\\\"Dcmz2Dn1d6NXdTpdZvbhVWg8qxTda6YvEb\\\",\\\"8PHhbaTedKYp9MBdJswyTngF3ziaWMiygT \\\"]\"")
         ;
         throw runtime_error(msg);
     }

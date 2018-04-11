@@ -28,7 +28,7 @@ AddEditAdrenalineNode::AddEditAdrenalineNode(QWidget *parent) :
     ui->aliasLineEdit->setPlaceholderText("Enter your Masternode alias");
     ui->addressLineEdit->setPlaceholderText("Enter your IP & port");
     ui->privkeyLineEdit->setPlaceholderText("Enter your Masternode private key");
-    ui->txhashLineEdit->setPlaceholderText("Enter your 5000 8TH TXID");
+    ui->txhashLineEdit->setPlaceholderText("Enter your 800,000 8TH TXID");
     ui->outputindexLineEdit->setPlaceholderText("Enter your transaction output index");
     ui->donationaddressLineEdit->setPlaceholderText("Enter a 8TH address for your MN donation");
     ui->donationpercentageLineEdit->setPlaceholderText("Input the % for the donation");
@@ -52,7 +52,7 @@ void AddEditAdrenalineNode::on_okButton_clicked()
     else if(ui->addressLineEdit->text() == "")
     {
         QMessageBox msg;
-        msg.setText("Please enter an ip address and port. (123.45.67.89:7118)");
+        msg.setText("Please enter an ip address and port. (102.45.67.111:8888)");
         msg.exec();
         return;
     }
@@ -66,7 +66,7 @@ void AddEditAdrenalineNode::on_okButton_clicked()
     else if(ui->txhashLineEdit->text() == "")
     {
         QMessageBox msg;
-        msg.setText("Please enter the transaction hash for the transaction that has 5000 coins");
+        msg.setText("Please enter the transaction hash for the transaction that has 800,000 8TH coins");
         msg.exec();
         return;
     }
